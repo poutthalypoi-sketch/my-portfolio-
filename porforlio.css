@@ -1,0 +1,258 @@
+/* :root{
+  ==hero:yellow;
+} */
+
+body {
+    margin: 0;
+    background-color: #793f29; 
+     font-family: Bahnschrift Condensed, Times, serif;
+}
+.container{
+    font-family: Bahnschrift Condensed, Times, serif;
+    /* border: 1 solid red; */
+    height: 100%;
+    margin: 0;
+    
+}
+.hero-container{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #773b25;
+
+}
+.hero-left-container{
+    width: 50%;
+    height: 90%;
+    /*border: 1px solid red;*/
+    flex-direction: column;
+    align-items: start;
+    color: aliceblue;
+    justify-content: center;
+    padding-left: 5%;
+    gap: 20px;
+}
+
+.hero-right-container{
+    width: 50%;
+    height: 90%;
+}
+.hero-left-container p{
+    font-size: 30px;
+}
+.hero-left-container h1{
+    font-size: 80px;
+}
+.hero-left-container h3{
+    font-size: 40px;
+}
+
+
+/* about*/
+.about-container{
+    /* border: 1px solid blue; */
+     display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color: #784634;
+      color: aliceblue;
+
+}
+.about-left-container{
+    /* border: 1px solid blue; */
+    max-width: 300px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+   
+}
+.about-left-container img{
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  max-height: 370px; 
+  object-fit: cover;
+  border-radius: 35px;
+  margin-left: 50%;
+  box-shadow: 5px rgba(0, 0, 0, 0.15);
+  display: block;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  cursor: pointer;
+}
+.about-left-container img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.about-right-container{
+    /* border: 1px solid blue; */
+    margin-left: 10%;
+}
+.about-right-container h3{
+    font-size: 30px;
+}
+.about-right-container p{
+    font-size: 20px;
+}
+.btn-group{
+display: flex;
+  gap: 1rem; 
+  margin-top: 1.5rem;
+}
+
+.btn {
+  font-family: Bahnschrift Condensed, Times, serif;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #0651f4;
+  color: #f1ebeb;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #03089b;
+}
+
+
+/*service*/
+.service-container{
+    /* border: 1px solid blue; */
+    background-color: #793f29;
+    color: #f1ebeb;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.service-left-container h1{
+ color: yellow;
+ text-align: center;
+ font-size: 40px;
+}
+.service-right-container{
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%
+}
+
+/* ຕົບແຕ່ງຕົວ Card */
+.service-card {
+  background-color: #877666; 
+  width: 100%;            
+  padding: 10px;             
+  border-radius: 15px;      
+  display: flex;
+  flex-direction: column;    
+  cursor: pointer;               
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.service-card:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+
+.service-card h4 {
+  color: gold;            
+  font-size: 18px;
+}
+
+.service-card p {
+  color: #ffffff;            
+  font-size: 14px;
+}
+.service-card i{
+    color: #DC9137;
+}
+
+/* ຕົບແຕ່ງວົງມົນອ້ອມໄອຄອນ */
+.icon-box {
+  width: 35px; 
+  height: 35px;                            
+  background-color: #663A2A;   
+  border-radius: 50%;          
+  display: flex;
+  align-items: center;         
+  justify-content: center;    
+  margin-bottom: 10px;         
+  border: 1px solid #fea10b;    
+}
+
+
+.service-card i {
+  color: goldenrod;               
+  font-size: 20px;           
+}
+
+/*  RESPONSIVE DESIGN (ສຳລັບມືຖື ແລະ แทັບເລັດ)  */
+
+  @media (max-width: 768px) {
+  
+  /* 1. ປັບ Container ຫຼັກ */
+   .container {
+    height: auto;
+  } 
+
+  /* 2. Hero Section (ປ່ຽນຈາກຂ້າງເປັນລຸ່ມ) */
+   .hero-container {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+    margin: 10px;
+  } 
+   .hero-left-container, 
+  .hero-right-container {
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+  } 
+    .hero-left-container h1 {
+    font-size: 45px; 
+  } 
+   .hero-left-container h3 {
+    font-size: 25px;
+  }  
+   .hero-left-container p {
+    font-size: 18px;
+  }
+
+  /* 3. About Section */
+   .about-container { 
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+  } 
+  .about-left-container,
+  .about-right-container {
+    width: 100%;
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .about-left-container img {
+    margin-left: 0;  ແກ້ໄຂບໍ່ໃຫ້ຮູບເບ່ຽງຊ້າຍ/ຂວາເກີນໄປໃນມືຖື
+  }
+  .about-right-container {
+    margin-left: 0;
+    text-align: center;
+  }
+  .btn-group {
+    justify-content: center;
+  }
+
+  /* 4. Service Section (Card) */
+    .service-right-container {
+    flex-direction: column; 
+    gap: 15px;
+   }  
+  .service-card {
+    width: 100%;
+  }
+}  
